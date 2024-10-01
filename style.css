@@ -43,9 +43,16 @@
   border-bottom: var(--secondary-color) 6px solid;
 }
 
-.main-nav__link {
+.main-nav__link,
+.main-nav__logo {
   font-size: 1.5rem;
   color: var(--off-white);
+  text-decoration: none;
+}
+
+.main-nav__link :hover,
+.main-nav__logo :hover {
+  text-decoration: underline;
 }
 
 .content__link {
@@ -58,7 +65,7 @@
   box-sizing: border-box;
 }
 
-.main.nav {
+.main-nav {
   display: flex;
 }
 
@@ -69,6 +76,8 @@
 .main-nav__logo {
   margin-right: auto;
   text-transform: uppercase;
+  color: var(--off-white);
+  text-decoration: none;
 }
 
 .hero, .content {
